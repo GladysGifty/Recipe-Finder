@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:
+    linear-gradient(rgba(15,23,42,.78),rgba(15,23,42,.78)),
+    url("images/home-bg.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    color:white;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    width:700px;
+    max-width:90%;
+
+    padding:50px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    animation:fadeIn 1s ease;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+    animation:slideDown 1s ease;
+
+}
+
+.hero h2{
+
+    font-size:40px;
+
+    color:#ffd166;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:#dbeafe;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#ff7b00;
+
+    color:white;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(255,123,0,.45);
+
+}
+
+.btn:hover{
+
+    background:#ff9800;
+
+    transform:translateY(-5px) scale(1.05);
+
+}
+
+footer{
+
+    position:absolute;
+
+    bottom:20px;
+
+    width:100%;
+
+    text-align:center;
+
+    color:#cbd5e1;
+
+    font-size:15px;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes slideDown{
+
+    from{
+
+        transform:translateY(-50px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+
+        padding:35px;
+
+    }
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .hero h2{
+
+        font-size:30px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+    }
+
+    .btn{
+
+        font-size:18px;
+
+        padding:15px 35px;
+
+    }
+
+}

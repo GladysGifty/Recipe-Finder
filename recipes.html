@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recipe Finder</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🍽️ Recipe Finder</h1>
+
+<p class="subtitle">
+Search delicious recipes using TheMealDB API
+</p>
+
+<input
+type="text"
+id="searchBox"
+placeholder="🔍 Search Recipe...">
+
+<div id="loading">
+Loading recipes...
+</div>
+
+<div id="error"></div>
+
+<div id="recipeContainer"></div>
+
+</div>
+<div id="recipeModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <img id="modalImage">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalCategory"></p>
+
+        <p id="modalCuisine"></p>
+
+        <h3>🥣 Ingredients</h3>
+
+<ul id="modalIngredients"></ul>
+
+<h3>📖 Instructions</h3>
+
+<p id="modalInstructions"></p>
+
+        <a id="youtubeLink" target="_blank">
+            <button>▶ Watch Recipe Video</button>
+        </a>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
